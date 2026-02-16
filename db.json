@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "firstName": "Poornima",
+      "lastName": "Sharma",
+      "phone": "9876543210",
+      "email": "a811p7@gmail.com",
+      "id": 10
+    },
+    {
+      "firstName": "poornima",
+      "lastName": "Joshi",
+      "phone": "7877667565",
+      "email": "p@gmail.com",
+      "id": 13
+    },
+    {
+      "firstName": "sachin",
+      "lastName": "sh",
+      "phone": "7890654378",
+      "email": "s@gmail.com",
+      "id": 14
+    }
+  ]
+}
