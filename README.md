@@ -1,73 +1,169 @@
-# React + TypeScript + Vite
+# 🚀 React CRUD Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive CRUD (Create, Read, Update, Delete) user dashboard using **React, Vite, and React-Bootstrap**.  
+The backend API is powered by **JSON Server**, deployed on **Render**, and the frontend is deployed on **Netlify**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Links
 
-## React Compiler
+🔗 **Frontend (Netlify):**  
+https://jazzy-alpaca-15a5a0.netlify.app
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 **Backend API (Render):**  
+https://user-management-backend-1-mh01.onrender.com
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- ✅ Add new users
+- 📋 View user list
+- ✏️ Edit existing users
+- 🗑️ Delete users
+- ⚡ Fast build using Vite
+- 🎨 Responsive UI with React-Bootstrap
+- 🔄 API integration using Axios
+- 🌍 Separate frontend & backend deployment
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Tech Stack
+
+### Frontend
+- React
+- Vite
+- React-Bootstrap
+- Axios
+- Bootstrap CSS
+
+### Backend
+- JSON Server
+- Node.js
+- Hosted on Render
+
+### Deployment
+- Frontend: Netlify
+- Backend: Render
+
+---
+
+## 📂 Project Structure
+
+```
+vite-project/
+│
+├── public/
+│
+├── src/
+│   ├── components/
+│   │   ├── AddUser.jsx
+│   │   ├── EditUser.jsx
+│   │   └── UserList.jsx
+│   │
+│   ├── services/
+│   │   └── api.js
+│   │
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── db.json
+├── package.json
+├── vite.config.js
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Installation & Setup
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1️⃣ Clone Repository
+
 ```
+git clone https://github.com/your-username/your-repo-name.git
+```
+
+### 2️⃣ Navigate to Project Folder
+
+```
+cd your-repo-name
+```
+
+### 3️⃣ Install Dependencies
+
+```
+npm install
+```
+
+---
+
+## ▶️ Run Locally
+
+### Start Backend (JSON Server)
+
+```
+npm run server
+```
+
+Backend runs at:
+```
+http://localhost:3001
+```
+
+### Start Frontend
+
+```
+npm run dev
+```
+
+Frontend runs at:
+```
+http://localhost:5173
+```
+
+---
+
+## 🏗️ Build for Production
+
+```
+npm run build
+```
+
+This creates a `dist` folder which is deployed to Netlify.
+
+---
+
+## 📡 API Endpoints
+
+```
+GET     /users
+POST    /users
+PUT     /users/:id
+DELETE  /users/:id
+```
+
+---
+
+## 🚀 Deployment Process
+
+### 🔹 Frontend (Netlify)
+1. Run `npm run build`
+2. Upload the `dist` folder manually to Netlify
+3. Live site generated
+
+### 🔹 Backend (Render)
+1. Push repository to GitHub
+2. Connect repository to Render
+3. Set build command:
+   ```
+   npm install
+   ```
+4. Set start command:
+   ```
+   npm run server
+   ```
+5. Backend API deployed successfully
+
+---
+
+
