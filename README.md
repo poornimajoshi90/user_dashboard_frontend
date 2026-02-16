@@ -39,7 +39,6 @@ https://user-management-backend-1-mh01.onrender.com
 
 ### Backend
 - JSON Server
-- Node.js
 - Hosted on Render
 
 ### Deployment
