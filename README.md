@@ -80,13 +80,13 @@ vite-project/
 ### 1️⃣ Clone Repository
 
 ```
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/poornimajoshi90/user_dashboard_frontend
 ```
 
 ### 2️⃣ Navigate to Project Folder
 
 ```
-cd your-repo-name
+cd user_dashboard_frontend
 ```
 
 ### 3️⃣ Install Dependencies
